@@ -11,5 +11,9 @@ public class TimeTest
 		t.tick();
 		System.out.println(t.toMilitaryString());
 		System.out.println(t.toString());
+
+		for(int i = 0; i < 60; i++) {
+			System.out.println(System.currentTimeMillis());
+		}
 	}
 }

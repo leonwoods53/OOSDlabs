@@ -16,6 +16,21 @@ public class Teacher extends Person {
     }
     
     //Getters and Setters
+    public int getNumCourses() {
+        return NumCourses;
+    }
+
+    public void setNumCourses(int numCourses) {
+        NumCourses = numCourses;
+    }
+
+    public String[] getCourses() {
+        return Courses;
+    }
+
+    public void setCourses(String[] courses) {
+        Courses = courses;
+    }
     
     //toString
     @Override
@@ -23,6 +38,7 @@ public class Teacher extends Person {
         return "Teacher [Courses=" + Arrays.toString(Courses) + ", NumCourses=" + NumCourses + "]";
     }
 
+   
     //Misc
     public boolean addCourse(String course) {
         return false;
